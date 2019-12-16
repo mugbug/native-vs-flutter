@@ -26,12 +26,18 @@ class _ContentWidgetState extends State<ContentWidget> {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
+            // mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Text("Digite seu nome:"),
+              Flexible(
+                child: Text(
+                  "Digite seu nome:",
+                ),
+              ),
               SizedBox(width: 20),
               Flexible(
                 child: CupertinoTextField(
@@ -44,7 +50,9 @@ class _ContentWidgetState extends State<ContentWidget> {
           SizedBox(height: 50),
           CupertinoButton.filled(
             borderRadius: BorderRadius.circular(100),
-            child: Text("Ir!"),
+            child: Center(
+              child: Text("Ir!"),
+            ),
             onPressed: pushNextScreen,
           ),
         ],

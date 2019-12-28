@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: steebchen/flutter@v1.0.0
+    - name: Get packages
+      run: flutter pub get
+    - name: Run app
+      run: flutter run
+    - name: Run tests
+      run: flutter test

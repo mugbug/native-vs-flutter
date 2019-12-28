@@ -9,6 +9,8 @@ jobs:
 
     steps:
     - uses: steebchen/flutter@v1.0.0
+    - name: Switch to flutter demo folder
+      run: cd flutter/
     - name: Get packages
       run: flutter pub get
     - name: Run app

@@ -9,8 +9,8 @@ jobs:
 
     steps:
     - uses: steebchen/flutter@v1.0.0
-    - name: Print current directory
-      run: pwd
+    - name: Print available folders
+      run: ls -a
     - name: Switch to flutter demo directory
       run: cd flutter
     - name: Get packages

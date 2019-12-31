@@ -12,9 +12,6 @@
 		EB41CEFE23A05CF90098B697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB41CEFD23A05CF90098B697 /* Assets.xcassets */; };
 		EB41CF0123A05CF90098B697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB41CEFF23A05CF90098B697 /* LaunchScreen.storyboard */; };
 		EB41CF0C23A05CF90098B697 /* UIKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41CF0B23A05CF90098B697 /* UIKitDemoTests.swift */; };
-		EB41CF1723A07C540098B697 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41CF1623A07C540098B697 /* Presenter.swift */; };
-		EB41CF1A23A0840D0098B697 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41CF1923A0840D0098B697 /* Router.swift */; };
-		EB41CF1E23A085880098B697 /* NextRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41CF1D23A085880098B697 /* NextRouter.swift */; };
 		EB41CF2023A085DB0098B697 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41CF1F23A085DB0098B697 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +35,6 @@
 		EB41CF0723A05CF90098B697 /* UIKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB41CF0B23A05CF90098B697 /* UIKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitDemoTests.swift; sourceTree = "<group>"; };
 		EB41CF0D23A05CF90098B697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB41CF1623A07C540098B697 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		EB41CF1923A0840D0098B697 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		EB41CF1D23A085880098B697 /* NextRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextRouter.swift; sourceTree = "<group>"; };
 		EB41CF1F23A085DB0098B697 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				EB41CEF423A05CF80098B697 /* AppDelegate.swift */,
-				EB41CF1823A083FB0098B697 /* FirstScreen */,
-				EB41CF1C23A0856D0098B697 /* NextScreen */,
+				EB41CEF823A05CF80098B697 /* ViewController.swift */,
+				EB41CF1F23A085DB0098B697 /* NextViewController.swift */,
 				EB41CEFD23A05CF90098B697 /* Assets.xcassets */,
 				EB41CEFF23A05CF90098B697 /* LaunchScreen.storyboard */,
 				EB41CF0223A05CF90098B697 /* Info.plist */,
@@ -100,25 +94,6 @@
 				EB41CF0D23A05CF90098B697 /* Info.plist */,
 			);
 			path = UIKitDemoTests;
-			sourceTree = "<group>";
-		};
-		EB41CF1823A083FB0098B697 /* FirstScreen */ = {
-			isa = PBXGroup;
-			children = (
-				EB41CEF823A05CF80098B697 /* ViewController.swift */,
-				EB41CF1623A07C540098B697 /* Presenter.swift */,
-				EB41CF1923A0840D0098B697 /* Router.swift */,
-			);
-			path = FirstScreen;
-			sourceTree = "<group>";
-		};
-		EB41CF1C23A0856D0098B697 /* NextScreen */ = {
-			isa = PBXGroup;
-			children = (
-				EB41CF1D23A085880098B697 /* NextRouter.swift */,
-				EB41CF1F23A085DB0098B697 /* NextViewController.swift */,
-			);
-			path = NextScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,12 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB41CF1A23A0840D0098B697 /* Router.swift in Sources */,
 				EB41CF2023A085DB0098B697 /* NextViewController.swift in Sources */,
-				EB41CF1E23A085880098B697 /* NextRouter.swift in Sources */,
 				EB41CEF923A05CF80098B697 /* ViewController.swift in Sources */,
 				EB41CEF523A05CF80098B697 /* AppDelegate.swift in Sources */,
-				EB41CF1723A07C540098B697 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

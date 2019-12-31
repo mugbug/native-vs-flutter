@@ -10,10 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private let presenter: PresenterProtocol
+    private var name: String?
 
-    init(presenter: PresenterProtocol) {
-        self.presenter = presenter
+    init() {
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -48,7 +47,6 @@ class ViewController: UIViewController {
 
     private lazy var textField: UITextField = {
         let field = UITextField()
-        field.delegate = self
         field.placeholder = "Pedro"
         return field
     }()
@@ -86,7 +84,10 @@ class ViewController: UIViewController {
 
 extension ViewController {
     @objc private func didTapButton() {
-        presenter.didPressContinue()
+        let nextViewController = NextViewController(name: textField.text)
+        self.navigationController?.pushViewController(
+            nextViewController, animated: true
+        )
     }
 }
 
@@ -122,17 +123,6 @@ extension ViewController {
         ])
     }
 }
-
-// MARK: - UITextFieldDelegate
-
-extension ViewController: UITextFieldDelegate {
-
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        presenter.didUpdateField(with: "\(textField.text ?? "")\(string)")
-        return true
-    }
-}
-
 
 extension UIStackView {
     func addArrangedSubviews(_ views: [UIView]) {

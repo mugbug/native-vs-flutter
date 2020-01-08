@@ -15,6 +15,7 @@ class _ContentWidgetState extends State<ContentWidget> {
     Navigator.push(
       context,
       CupertinoPageRoute(
+        fullscreenDialog: true,
         builder: (context) => NextScreen(
           name: _fieldController.text,
         ),

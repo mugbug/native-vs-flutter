@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Runner.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>1F3331BDDE21BE9B309A0CE233961BAD9DBDB9DE</string>
+				<key>dateExpires</key>
+				<string>08/01/21</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>1F3331BDDE21BE9B309A0CE233961BAD9DBDB9DE</string>
+						<key>dateExpires</key>
+						<string>08/01/21</string>
+						<key>type</key>
+						<string>Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>App.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>JZ2QTNWLCN</string>
+						<key>name</key>
+						<string>Dextra Consultoria e Servicos em Informatica</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>1F3331BDDE21BE9B309A0CE233961BAD9DBDB9DE</string>
+						<key>dateExpires</key>
+						<string>08/01/21</string>
+						<key>type</key>
+						<string>Apple Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>Flutter.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>JZ2QTNWLCN</string>
+						<key>name</key>
+						<string>Dextra Consultoria e Servicos em Informatica</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>JZ2QTNWLCN.br.com.dextra.pma</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>JZ2QTNWLCN</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>JZ2QTNWLCN.br.com.dextra.pma</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>Runner.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>26e769d6-0589-4cae-b8c7-ecc33d877f3c</string>
+				<key>name</key>
+				<string>match AppStore br.com.dextra.pma</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>JZ2QTNWLCN</string>
+				<key>name</key>
+				<string>Dextra Consultoria e Servicos em Informatica</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

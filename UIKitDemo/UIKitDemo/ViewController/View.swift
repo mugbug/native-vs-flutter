@@ -8,14 +8,32 @@
 
 import UIKit
 
-class View: UIView {
+protocol ViewDelegate: AnyObject {
+    func didTapButton()
+}
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class View: UIView, NibDesignable {
+
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var textField: UITextField!
+
+    private weak var delegate: ViewDelegate?
+
+    init(delegate: ViewDelegate) {
+        self.delegate = delegate
+        super.init(frame: .zero)
+        loadNib()
     }
-    */
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
+    @IBAction func didTapButton(_ sender: Any) {
+        delegate?.didTapButton()
+    }
+
+    func configureButtonCornerRadius() {
+        button.layer.cornerRadius = button.frame.height / 2
+    }
 }

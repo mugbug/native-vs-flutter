@@ -13,6 +13,8 @@
 		EB41CF0123A05CF90098B697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB41CEFF23A05CF90098B697 /* LaunchScreen.storyboard */; };
 		EB41CF0C23A05CF90098B697 /* UIKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41CF0B23A05CF90098B697 /* UIKitDemoTests.swift */; };
 		EB41CF2023A085DB0098B697 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41CF1F23A085DB0098B697 /* NextViewController.swift */; };
+		EB6162AF23C5296D00CB6261 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6162AE23C5296D00CB6261 /* View.xib */; };
+		EB6162B123C5298200CB6261 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6162B023C5298200CB6261 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		EB41CF0B23A05CF90098B697 /* UIKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitDemoTests.swift; sourceTree = "<group>"; };
 		EB41CF0D23A05CF90098B697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB41CF1F23A085DB0098B697 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		EB6162AE23C5296D00CB6261 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		EB6162B023C5298200CB6261 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				EB41CEF423A05CF80098B697 /* AppDelegate.swift */,
-				EB41CEF823A05CF80098B697 /* ViewController.swift */,
+				EB6162AB23C5291200CB6261 /* ViewController */,
 				EB41CF1F23A085DB0098B697 /* NextViewController.swift */,
 				EB41CEFD23A05CF90098B697 /* Assets.xcassets */,
 				EB41CEFF23A05CF90098B697 /* LaunchScreen.storyboard */,
@@ -94,6 +98,16 @@
 				EB41CF0D23A05CF90098B697 /* Info.plist */,
 			);
 			path = UIKitDemoTests;
+			sourceTree = "<group>";
+		};
+		EB6162AB23C5291200CB6261 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB41CEF823A05CF80098B697 /* ViewController.swift */,
+				EB6162AE23C5296D00CB6261 /* View.xib */,
+				EB6162B023C5298200CB6261 /* View.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB41CF0123A05CF90098B697 /* LaunchScreen.storyboard in Resources */,
+				EB6162AF23C5296D00CB6261 /* View.xib in Resources */,
 				EB41CEFE23A05CF90098B697 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6162B123C5298200CB6261 /* View.swift in Sources */,
 				EB41CF2023A085DB0098B697 /* NextViewController.swift in Sources */,
 				EB41CEF923A05CF80098B697 /* ViewController.swift in Sources */,
 				EB41CEF523A05CF80098B697 /* AppDelegate.swift in Sources */,
@@ -351,13 +367,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VC5347Z9AZ;
+				DEVELOPMENT_TEAM = JZ2QTNWLCN;
 				INFOPLIST_FILE = UIKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.mugbug.UIKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.dextra.pma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -369,13 +385,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VC5347Z9AZ;
+				DEVELOPMENT_TEAM = JZ2QTNWLCN;
 				INFOPLIST_FILE = UIKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.mugbug.UIKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.dextra.pma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

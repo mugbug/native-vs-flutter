@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">XmlDemo</string>
+    <string name="go_to">Ir!</string>
+    <string name="insert_your_name">Digite seu nome:</string>
+    <string name="hello_name">Oi, %1$s!!</string>
+    <string name="name_hint">Pedro</string>
+</resources>

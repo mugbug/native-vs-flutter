@@ -1,0 +1,21 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: steebchen/flutter@v1.0.0
+    - name: Print available folders
+      run: ls -a
+    - name: Switch to flutter demo directory
+      run: cd flutter
+    - name: Get packages
+      run: flutter pub get
+    - name: Run app
+      run: flutter run
+    - name: Run tests
+      run: flutter test

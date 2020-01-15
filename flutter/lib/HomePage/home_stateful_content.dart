@@ -38,7 +38,6 @@ class _ContentWidgetState extends State<ContentWidget> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
-            // mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Flexible(

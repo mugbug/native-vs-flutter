@@ -26,7 +26,7 @@ struct ContentView: View {
                         Spacer()
                     }
                     .background(Color.blue)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(.white)
                     .cornerRadius(200)
                 }
             }

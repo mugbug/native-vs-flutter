@@ -18,10 +18,8 @@ class NextScreen extends StatelessWidget {
         automaticallyImplyLeading: true,
         previousPageTitle: "Flutter Demo",
       ),
-      child: Container(
-        child: Center(
-          child: Text("Oi, $name!!"),
-        ),
+      child: Center(
+        child: Text("Oi, $name!!"),
       ),
     );
   }
